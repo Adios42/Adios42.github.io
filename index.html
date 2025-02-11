@@ -3,116 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Profile</title>
-    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .container {
-            padding: 20px;
-        }
-        .section-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
-            color: #333;
-        }
-        .content {
-            margin-top: 10px;
-            line-height: 1.6;
-        }
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <meta name="description" content="Suin Lee - M.Sc. in Electrical Engineering, KAIST. Research in 3D Computer Vision, Generative Models, and more.">
+    <title>Suin Lee's Academic Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <h1>Your Name</h1>
-        <p>Master's student in Electrical Engineering | Researcher | Programmer</p>
+        <h1>Suin Lee</h1>
+        <h2>M.Sc. in Electrical Engineering, KAIST</h2>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <!-- About Me Section -->
-        <section>
-            <div class="section-title">About Me</div>
-            <div class="content">
-                <p>I am a Master's student in Electrical Engineering at KAIST, with research interests in 3D computer vision, generative models, and motion generation.</p>
-            </div>
-        </section>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <!-- Education Section -->
-        <section>
-            <div class="section-title">Education</div>
-            <div class="content">
-                <ul>
-                    <li><strong>M.Sc. in Electrical Engineering</strong> (Expected March 2025) - KAIST, GPA: 3.65/4.3</li>
-                    <li><strong>B.Sc. in Electronics Engineering & Electrical Engineering</strong> (2023) - Inha University, GPA: 4.2/4.5</li>
-                </ul>
-            </div>
-        </section>
+    <section id="home">
+        <h3>Welcome!</h3>
+        <p>I'm Suin Lee, an M.Sc. candidate in Electrical Engineering at KAIST. My research interests include 3D computer vision, 3D generative models, diffusion models, and motion generation. I am currently working on my thesis, "Customized Text-aligned Texturing via Effective Resampling".</p>
+    </section>
 
-        <!-- Research Interests Section -->
-        <section>
-            <div class="section-title">Research Interests</div>
-            <div class="content">
-                <ul>
-                    <li>3D Computer Vision</li>
-                    <li>3D Generative Models</li>
-                    <li>Diffusion Models</li>
-                    <li>Motion Generation</li>
-                </ul>
-            </div>
-        </section>
+    <section id="research">
+        <h3>Research</h3>
+        <h4>Video Understanding Frameworks</h4>
+        <p>Developed a video understanding framework for detecting dangerous situations using AI, including speech recognition and behavior prediction.</p>
+        <h4>Text-Guided 3D Animatable Avatar Generation</h4>
+        <p>Worked on a text-guided motion generation pipeline for 3D avatars, delivered to LG Electronics for metaverse applications.</p>
+    </section>
 
-        <!-- Publications Section -->
-        <section>
-            <div class="section-title">Publications</div>
-            <div class="content">
-                <ul>
-                    <li><strong>TexTailor: Customized Text-aligned Texturing via Effective Resampling</strong> - To appear in ICLR 2025</li>
-                    <li><strong>MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation</strong> - To appear in ICLR 2025</li>
-                </ul>
-            </div>
-        </section>
+    <section id="cv">
+        <h3>Curriculum Vitae</h3>
+        <p>Download my CV here: <a href="CV.pdf" target="_blank">CV (PDF)</a></p>
+        <p>For more details on my education, research experience, and technical skills, refer to the CV document.</p>
+    </section>
 
-        <!-- Tools & Software Section -->
-        <section>
-            <div class="section-title">Tools & Software</div>
-            <div class="content">
-                <ul>
-                    <li>Programming Languages: Python, C++, MATLAB</li>
-                    <li>Machine Learning Frameworks: PyTorch</li>
-                    <li>Computer Vision: OpenCV, Pytorch3D, Blender</li>
-                </ul>
-            </div>
-        </section>
-    </div>
+    <section id="publications">
+        <h3>Publications</h3>
+        <h4>Peer-reviewed Conference Proceedings</h4>
+        <ul>
+            <li><a href="https://openreview.net/forum?id=1NprT9Kz0d" target="_blank">TexTailor: Customized Text-aligned Texturing via Effective Resampling</a></li>
+            <li><a href="https://openreview.net/forum?id=mzL19kKE3r" target="_blank">MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation</a></li>
+        </ul>
+        <h4>Journal Articles</h4>
+        <ul>
+            <li><a href="https://doi.org/10.1016/j.knosys.2024.111911" target="_blank">Maximizing discrimination capability of knowledge distillation with energy function</a></li>
+        </ul>
+    </section>
 
-    <!-- Footer Section -->
+    <section id="contact">
+        <h3>Contact</h3>
+        <p>You can reach me via email at: <a href="mailto:suin.lee@kaist.ac.kr">suin.lee@kaist.ac.kr</a></p>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Your Name</p>
+        <p>&copy; 2025 Suin Lee. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
