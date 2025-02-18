@@ -123,6 +123,7 @@
         }
 
         .contact-info {
+            flex:1;
             margin-top: 2rem;
         }
 
@@ -167,11 +168,12 @@
         .container {
             display: flex;
             gap: 1rem; /* 섹션 사이 간격 */
+            align-items: flex-start;
         }
         
         /* Education 및 Contact 섹션에 동일한 폭을 부여할 수 있음 */
-        .section {
-            flex: 1;
+        .education {
+        flex: 2; /* Education 섹션이 더 넓은 공간을 차지합니다. */
         }
         
         /* 기존에 작성한 리스트 스타일도 그대로 적용 가능 */
@@ -257,14 +259,14 @@
                         <span class="icon">🎓</span>
                         <div class="details">
                             <strong>M.S. in Electrical Engineering, 2025</strong><br>
-                            KAIST
+                            KAIST, Korea
                         </div>
                     </li>
                     <li>
                         <span class="icon">🎓</span>
                         <div class="details">
                             <strong>B.S. in Electronics and Electrical Engineering, 2023</strong><br>
-                            Inha University
+                            Inha University, Korea
                         </div>
                     </li>
                 </ul>
