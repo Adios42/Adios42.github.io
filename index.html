@@ -164,14 +164,31 @@
         .contact-list li span {
           line-height: 1.4;
         }
-        a {
-        text-decoration: none; 
-        color: #007bff; 
+        .container {
+            display: flex;
+            gap: 2rem; /* 섹션 사이 간격 */
         }
         
-            a:hover {
-                color: #0056b3;
-            }
+        /* Education 및 Contact 섹션에 동일한 폭을 부여할 수 있음 */
+        .section {
+            flex: 1;
+        }
+        
+        /* 기존에 작성한 리스트 스타일도 그대로 적용 가능 */
+        .education-list,
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            text-decoration: none; 
+            color: #007bff; 
+        }
+        
+        a:hover {
+            color: #0056b3;
+        }
 
 
         @media (max-width: 768px) {
