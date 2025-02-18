@@ -1,68 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Suin Lee - M.Sc. in Electrical Engineering, KAIST. Research in 3D Computer Vision, Generative Models, and more.">
-    <title>Suin Lee's Academic Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Academic Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header {
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        .nav-links a:hover {
+            color: #4285f4;
+        }
+
+        .nav-links a.active {
+            color: #4285f4;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 100px auto 0;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+        }
+
+        .profile-section {
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .profile-name {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-title {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .profile-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .profile-links a {
+            color: #4285f4;
+            text-decoration: none;
+        }
+
+        .content-section {
+            padding-right: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Suin Lee</h1>
-        <h2>M.Sc. in Electrical Engineering, KAIST</h2>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-title">Your Name</div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Publications</a>
+                <a href="#">Students</a>
+                <a href="#">Lab</a>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <main class="main-content">
+        <section class="profile-section">
+            <img src="/api/placeholder/250/250" alt="Profile" class="profile-image">
+            <h1 class="profile-name">Your Name</h1>
+            <p class="profile-title">Position Title<br>Institution Name</p>
+            <div class="profile-links">
+                <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </section>
 
-    <section id="home">
-        <h3>Welcome!</h3>
-        <p>I'm Suin Lee, an M.Sc. candidate in Electrical Engineering at KAIST. My research interests include 3D computer vision, 3D generative models, diffusion models, and motion generation. I am currently working on my thesis, "Customized Text-aligned Texturing via Effective Resampling".</p>
-    </section>
+        <section class="content-section">
+            <div class="section">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    여기에 자기소개를 작성하세요. 현재 position, 연구 분야, 주요 경력 등을 포함할 수 있습니다.
+                </p>
+            </div>
 
-    <section id="research">
-        <h3>Research</h3>
-        <h4>Video Understanding Frameworks</h4>
-        <p>Developed a video understanding framework for detecting dangerous situations using AI, including speech recognition and behavior prediction.</p>
-        <h4>Text-Guided 3D Animatable Avatar Generation</h4>
-        <p>Worked on a text-guided motion generation pipeline for 3D avatars, delivered to LG Electronics for metaverse applications.</p>
-    </section>
+            <div class="section">
+                <h2 class="section-title">Research Interests</h2>
+                <p>
+                    연구 관심사를 작성하세요. 예를 들어:<br>
+                    - 주요 연구 분야 1<br>
+                    - 주요 연구 분야 2<br>
+                    - 주요 연구 분야 3
+                </p>
+            </div>
 
-    <section id="cv">
-        <h3>Curriculum Vitae</h3>
-        <p>Download my CV here: <a href="CV.pdf" target="_blank">CV (PDF)</a></p>
-        <p>For more details on my education, research experience, and technical skills, refer to the CV document.</p>
-    </section>
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                <p>
+                    Ph.D. in Computer Science, 20XX<br>
+                    University Name<br><br>
+                    B.S. in Computer Science, 20XX<br>
+                    University Name
+                </p>
+            </div>
 
-    <section id="publications">
-        <h3>Publications</h3>
-        <h4>Peer-reviewed Conference Proceedings</h4>
-        <ul>
-            <li><a href="https://openreview.net/forum?id=1NprT9Kz0d" target="_blank">TexTailor: Customized Text-aligned Texturing via Effective Resampling</a></li>
-            <li><a href="https://openreview.net/forum?id=mzL19kKE3r" target="_blank">MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation</a></li>
-        </ul>
-        <h4>Journal Articles</h4>
-        <ul>
-            <li><a href="https://doi.org/10.1016/j.knosys.2024.111911" target="_blank">Maximizing discrimination capability of knowledge distillation with energy function</a></li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h3>Contact</h3>
-        <p>You can reach me via email at: <a href="mailto:suin.lee@kaist.ac.kr">suin.lee@kaist.ac.kr</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Suin Lee. All rights reserved.</p>
-    </footer>
+            <div class="section contact-info">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-item">
+                    📧 your.email@domain.com
+                </div>
+                <div class="contact-item">
+                    📍 Your Office Address
+                </div>
+                <div class="contact-item">
+                    📞 Your Phone Number
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
-
