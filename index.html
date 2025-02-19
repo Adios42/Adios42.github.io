@@ -202,6 +202,75 @@
                 display: none;
             }
         }
+
+        .publication-item {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .pub-preview {
+            flex: 0 0 200px;
+        }
+        
+        .pub-preview img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+        
+        .pub-content {
+            flex: 1;
+        }
+        
+        .pub-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .authors {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+        .conference {
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight {
+            color: #e74c3c;
+            font-weight: 500;
+        }
+        
+        .pub-links {
+            margin-top: 0.5rem;
+        }
+        
+        .pub-links a {
+            color: #4285f4;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+        
+        .pub-links a:hover {
+            text-decoration: underline;
+        }
+
+@media (max-width: 768px) {
+    .publication-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .pub-preview {
+        flex: 0 0 auto;
+    }
+}
     </style>
 </head>
 <body>
